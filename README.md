@@ -17,9 +17,9 @@ X.com (旧Twitter) の英語動画を、日本語字幕付きで視聴するた�
 ## 🚀 インストール手順
 
 1. **リポジトリのクローン**
-   ```bash
-   git clone https://github.com/あなたのユーザー名/リポジトリ名.git
-   cd リポジトリ名
+```bash
+git clone [https://github.com/salmonBasilCheese/xcom-video-transcriber.git](https://github.com/salmonBasilCheese/xcom-video-transcriber.git)
+cd xcom-video-transcriber
 
 ```
 
@@ -43,12 +43,15 @@ OPENAI_API_KEY=sk-proj-xxxxxxxx...
 
 ### ステップ 1: 文字起こしと翻訳
 
-以下のコマンドを実行し、X.comの動画URLを入力します。
+以下のコマンドを実行します。
 
 ```bash
 python transcribe_x.py
 
 ```
+
+実行すると **`Please enter the X.com video URL:`** と表示されます。
+翻訳したいX(Twitter)の動画URLを貼り付けて、Enterキーを押してください。
 
 処理が完了すると、翻訳結果が `transcript.md` に保存されます。
 
@@ -98,7 +101,3 @@ yt-dlp "動画URL" -o video.mp4
 
 * 本ツールはOpenAIのAPI（従量課金）を使用します。長時間の動画を処理する際はAPI利用料にご注意ください。
 * 生成された `.env` ファイルや著作権のある動画ファイルは、GitHub等にアップロードしないよう `.gitignore` で設定されています。
-
-```
-
-```
